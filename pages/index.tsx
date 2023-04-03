@@ -23,14 +23,8 @@ const Home: NextPage = () => {
               </h2>
             </div>
             <div className="flex flex-col gap-4">
-              First, fund this wallet from the Sui faucet:
-              <Fund />
-              then
+              First, make sure you have enough Sui balance to mint the NFT :
               <Mint />
-              or
-              <WalletActions />
-              or
-              <Disconnect />
             </div>
           </div>
         )}
