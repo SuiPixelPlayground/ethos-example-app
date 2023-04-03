@@ -8,8 +8,6 @@ const Home: NextPage = () => {
 
   return (
     <div className="flex justify-between items-start">
-      <div className="p-12 flex-1">Status: {status}</div>
-
       <div className="max-w-7xl mx-auto text-center py-12 px-4 sm:px-6 lg:py-16 lg:px-8 flex-6">
         {!wallet ? (
           <SignInButton className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
@@ -22,8 +20,8 @@ const Home: NextPage = () => {
                 Sui Pixel Playground
               </h2>
             </div>
-            <div className="flex flex-col gap-4">
-              First, make sure you have enough Sui balance to mint the NFT :
+            <div className="flex flex-col gap-4 italic">
+              Make sure you have enough Sui balance to mint the NFT.
               <Mint />
             </div>
           </div>
